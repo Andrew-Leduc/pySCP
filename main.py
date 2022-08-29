@@ -15,6 +15,12 @@ META_DATA_PATH = '/Users/andrewleduc/Desktop/nPOP_Paper/dat/raw_data/pSCoPE/anno
 CELL_TYPES = ['m','u']
 NEG_CTRL = ['neg']
 
+
+
+'''
+Need to change data storage format to anndata
+'''
+
 def preproc_DIAN(data_path):
     search = pd.read_csv(data_path, sep='\t')#,engine= 'pyarrow'
 
@@ -126,7 +132,7 @@ def first_pass_PCA():
     #print Rsq due to different batch effects first 5 PCs
     #PCA no imp/with imp
 
-#change to anndata
+
 
 if __name__ == '__main__':
 
